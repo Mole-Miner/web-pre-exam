@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.br--white {
+    width: 1px;
+    height: 50%;
+    background-color: lightgray;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, a, ul {
+    color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 10px 200px;
+    background-color: #0B3D4C;
+}
+
+header, nav, main, main aside, footer {
+    display: flex;
+}
+
+header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 300px;
+    padding-left: 100px;
+    background-image: url(title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #06222A;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+}
+
+nav div a {
+    text-decoration: none;
+}
+
+main {
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+main aside {
+    flex-direction: column;
+    width: 20%;
+}
+
+main aside ul li {
+    margin-bottom: 5px;
+}
+
+main div {
+    flex-direction: column;
+    width: 70%;
+}
+
+main p {
+    line-height: 20px;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 380px;
+}
+
+.card button {
+    padding: 10px;
+}
+
+.card--border-left {
+    border-left: 1px solid whitesmoke;
+    padding-left: 20px;
+}
+
+footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 1420px) {
+    body {
+        padding: 10px 100px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main aside {
+        margin-bottom: 30px;
+    }
+
+    main div {
+        width: 100%;
+    }
+}
